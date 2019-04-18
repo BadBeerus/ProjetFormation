@@ -61,11 +61,11 @@
         <name>devopsapp-snapshot</name>
         <url>http://192.168.100.130:8081/repository/devopsapp-snapshot</url>
     </snapshotRepository>
-    <repository>
+    <!--repository>
         <id>release</id>
         <name>devopsapp-releases</name>
         <url>http://192.168.100.130:8081/repository/devopsapp-releases</url>
-    </repository>
+    </repository-->
 </distributionManagement>
 
 <!--  <distributionManagement>
