@@ -58,12 +58,12 @@
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>devops-app-01-snapshots</name>
+        <name>devopsapp-snapshot</name>
         <url>http://192.168.100.130:8081/repository/devopsapp-snapshot</url>
     </snapshotRepository>
     <repository>
         <id>release</id>
-        <name>devops-app-01-releases</name>
+        <name>devopsapp-releases</name>
         <url>http://192.168.100.130:8081/repository/devopsapp-releases</url>
     </repository>
 </distributionManagement>
