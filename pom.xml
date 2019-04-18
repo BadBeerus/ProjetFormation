@@ -62,7 +62,7 @@
         <url>http://localhost:8081/nexus/devopsapp-snapshot</url>
     </snapshotRepository>
         <repository>
-        <id>central</id>
+        <id>release</id>
         <name>devops-app-01-releases</name>
         <url>http://localhost:8081/nexus/devopsapp-releases</url>
     </repository>
