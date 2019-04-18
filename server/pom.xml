@@ -12,7 +12,6 @@
 
   <artifactId>server</artifactId>
   <packaging>jar</packaging>
-  <name>Server DevOps App</name>
   <description>Serveur pour application DevOps App.</description>
 
   <build>
@@ -45,3 +44,4 @@
     </dependency>
   </dependencies>
 
+</project>
