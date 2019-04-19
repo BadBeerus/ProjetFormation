@@ -231,7 +231,7 @@
 
 <scm>
    <tag>HEAD</tag>
-   <url>https://github.com/BadBeerus/ProjetFormation.git</url>
+   <url>https://git@github.com:BadBeerus/ProjetFormation.git</url>
    <connection>scm:git:http://git@https://admin@github.com/BadBeerus/ProjetFormation.git</connection>
    <developerConnection>scm:git:http://git@https://github.com/BadBeerus/ProjetFormation.git</developerConnection>
 </scm>
