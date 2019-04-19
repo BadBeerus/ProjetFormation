@@ -75,12 +75,6 @@
       <url>file:///tmp/maven-project-site</url>
     </site>
   </distributionManagement> -->
-  <scm>
-    <url>file:///C:/tmp/svnrepo/myproj/trunk</url>        
-    <!--connection>scm:svn:file:///C:/tmp/svnrepo/myproj/trunk</connection>
-    <developerConnection>scm:svn:file:///C:/tmp/svnrepo/myproj/trunk</developerConnection-->        
-</scm>
-
 
   <build>
     <plugins>
@@ -232,6 +226,13 @@
       </plugins>
     </pluginManagement>
   </build>
+
+<scm>
+   <tag>HEAD</tag>
+   <connection>scm:git:http://git@https://github.com/BadBeerus/ProjetFormation.git</connection>
+   <developerConnection>scm:git:http://git@https://github.com/BadBeerus/ProjetFormation.git</developerConnection>
+   <url>https://github.com/BadBeerus/ProjetFormation.git</url>
+</scm>
 
   <dependencyManagement>
     <dependencies>
