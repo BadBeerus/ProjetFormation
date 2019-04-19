@@ -3,7 +3,6 @@
 pipeline {
     agent any
 
-try {
 		stages {
 			stage('Build') {
 				steps {
@@ -22,7 +21,3 @@ try {
 			}
 		}
 	}
-catch (exc) {
-		echo "Une erreur s'est produite, le build ne sera pas release"
-	}
-}
