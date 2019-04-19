@@ -6,7 +6,7 @@
   <artifactId>devopsapp</artifactId>
   <packaging>pom</packaging>
 
-  <version>1.9-SNAPSHOT</version>
+  <version>1.9</version>
 
   <name>DevOps App</name>
   <description>Application DevOps App developpe par LesFormateurs.</description>
@@ -234,7 +234,7 @@
    <url>http://github.com/BadBeerus/ProjetFormation</url>
    <connection>scm:git:git@github.com:BadBeerus/ProjetFormation.git</connection>
    <!--developerConnection>scm:git:http://git@https://github.com/BadBeerus/ProjetFormation.git</developerConnection-->
-  <tag>HEAD</tag>
+  <tag>devopsapp-1.9</tag>
   </scm>
 
   <dependencyManagement>
