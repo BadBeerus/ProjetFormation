@@ -87,13 +87,13 @@
         </configuration>
       </plugin>
 
-      <plugin>
+      <!--plugin>
         <artifactId>maven-release-plugin</artifactId>
           <version>2.5.3</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
-      </plugin>
+      </plugin-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -184,7 +184,7 @@
 
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>2.2.3</version>
         </plugin>
 
         <plugin>
