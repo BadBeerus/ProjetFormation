@@ -23,6 +23,6 @@ try {
 		}
 	}
 catch (exc) {
-		echo 'Une erreur s'est produite, le build ne sera pas release'
+		echo "Une erreur s'est produite, le build ne sera pas release"
 	}
 }
