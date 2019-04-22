@@ -8,7 +8,7 @@
 
 # récupération de la version désirée passée à jenkins (snapshot, release)
 
-version_artifact=1.10-SNAPSHOT
+version_artifact=$1
 
 # définition des variables d'environnement nécessaires
 
