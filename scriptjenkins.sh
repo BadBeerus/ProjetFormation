@@ -6,11 +6,11 @@
 
 
 
-# récupération de la version désirée passée à jenkins (snapshot, release)
+# rÃ©cupÃ©ration de la version dÃ©sirÃ©e passÃ©e Ã  jenkins (snapshot, release)
 
 version_artifact=$1
 
-# définition des variables d'environnement nécessaires
+# dÃ©finition des variables d'environnement nÃ©cessaires
 
 chemin_metadata=http://192.168.100.130:8081/repository/maven-snapshots/com/lesformateurs/maven-project/devopsapp/
 chemin_snapshot=http://192.168.100.130:8081/repository/maven-snapshots/com/lesformateurs/maven-project/server/$version
@@ -28,26 +28,26 @@ if [[ $(grep "SNAPSHOT" <<<$version_artifact) ]]
 
     then
 	
-# récupération de la version sans "SNAPSHOT" 
+# rÃ©cupÃ©ration de la version sans "SNAPSHOT" 
 
 version_snapshot='echo $version_artifact | grep -c "-SNAPSHOT"'
 	
-# récupération de la dernière version dans le metadata
+# rÃ©cupÃ©ration de la derniÃ¨re version dans le metadata
 
 derniere_version=$(curl -s $chemin_metadata/maven-metadata.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/")
 
-# ajout du point au milieu du numéro version
+# ajout du point au milieu du numÃ©ro version
 
 derniere_version_bon_format=$(echo $derniere_version | sed 's@\(........\)@\1.@g')
 
-# adresse finale pour récupérer la bonne version de l'artifact
+# adresse finale pour rÃ©cupÃ©rer la bonne version de l'artifact
 
 adresse_telechargement=$chemin_snapshot/$version_artifact/$derniere_version/$version_snapshot-$derniere_version_bon_format
 
 dernier_build=$(curl -s $adresse_telechargement/maven-metadata.xml | grep '<value>' | head -1 | sed "s/.*<value>\([^<]*\)<\/value>.*/\1/")
 build_jar=$dernier_build.jar
 
-# téléchargement de la bonne version de l'artifact
+# tÃ©lÃ©chargement de la bonne version de l'artifact
 
 projet=wget $adresse_telechargement/$build_jar
 
@@ -55,7 +55,7 @@ projet=wget $adresse_telechargement/$build_jar
 
 ssh root@$adresse_vm3
 
-# test si le dossier existe, sinon on le créer
+# test si le dossier existe, sinon on le crÃ©er
 
 [ -d /data/projet ] || mkdir /data/projet
 
@@ -71,7 +71,7 @@ scp $projet root@$adresse_vm3:/data/projet
     else
 
 
-# récupération de la dernière version dans le metadata
+# rÃ©cupÃ©ration de la derniÃ¨re version dans le metadata
 
 derniere_version=$(curl -s $chemin_metadata/maven-metadata.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/")
 
@@ -80,7 +80,7 @@ adresse_telechargement=$chemin_release/$version_artifact
 dernier_build=$(curl -s $adresse_telechargement/maven-metadata.xml | grep '<value>' | head -1 | sed "s/.*<value>\([^<]*\)<\/value>.*/\1/")
 build_jar=server-$version_artifact.jar
 
-# téléchargement de la bonne version de l'artifact
+# tÃ©lÃ©chargement de la bonne version de l'artifact
 
 projet=wget $adresse_telechargement/$build_jar
 
@@ -88,7 +88,7 @@ projet=wget $adresse_telechargement/$build_jar
 
 ssh root@$adresse_vm3
 
-# test si le dossier existe, sinon on le créer
+# test si le dossier existe, sinon on le crÃ©er
 
 [ -d /data/projet ] || mkdir /data/projet
 
@@ -98,5 +98,3 @@ scp $projet root@$adresse_vm3:/data/projet
 
 
 fi
-
- 
