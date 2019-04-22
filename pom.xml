@@ -235,7 +235,6 @@
    <url>http://github.com/BadBeerus/ProjetFormation</url>
    <connection>scm:git:git@github.com:BadBeerus/ProjetFormation.git</connection>
    <!--developerConnection>scm:git:http://git@https://github.com/BadBeerus/ProjetFormation.git</developerConnection-->
-  <tag>HEAD</tag>
   </scm>
 
   <dependencyManagement>
