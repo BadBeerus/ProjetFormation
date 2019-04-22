@@ -5,12 +5,12 @@
   <parent>
     <groupId>com.lesformateurs.maven-project</groupId>
     <artifactId>devopsapp</artifactId>
-    <version>1.11-SNAPSHOT</version>
+    <version>1.11</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>server</artifactId>
-  <version>1.11-SNAPSHOT</version>
+  <version>1.11</version>
   <packaging>jar</packaging>
   <description>Serveur pour application DevOps App.</description>
 
