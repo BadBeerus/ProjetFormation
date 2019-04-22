@@ -1,6 +1,5 @@
 ############# Readme du projet Formation #################
 
-
 projet: - deployer le projet su un repo nexus sur une machine distante (VM)
 	- créer un job RELEASE
 	- créer un script prenant en paramètre la version voulu et récupérant la version la plus
