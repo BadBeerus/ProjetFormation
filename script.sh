@@ -14,7 +14,7 @@ version_artifact=$1
 
 chemin_metadata=http://192.168.100.130:8081/repository/maven-snapshots/com/lesformateurs/maven-project/devopsapp/
 chemin_snapshot=http://192.168.100.130:8081/repository/maven-snapshots/com/lesformateurs/maven-project/server$version
-chemin_release=http://192.168.100.130:8081/repository/maven-releases/com/lesformateurs/maven-project/server/$version
+chemin_release=http://192.168.100.130:8081/repository/maven-releases/com/lesformateurs/maven-project/server$version
 adresse_vm3=192.168.100.1
 
 
