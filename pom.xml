@@ -56,26 +56,16 @@
   </reporting>
 
 <distributionManagement>    
-	<snapshotRepository>
+    <snapshotRepository>
         <id>snapshots</id>
-<<<<<<< HEAD
-        <name>devops-app-01-snapshots</name>
-=======
-        <name>devopsapp-snapshot</name>
->>>>>>> 6a48d671665e7235ce6b1da0601f78aca29c1398
-        <url>http://192.168.100.130:8081/repository/devopsapp-snapshot</url>
+        <name>maven-snapshot</name>
+        <url>http://192.168.100.130:8081/repository/maven-snapshot</url>
     </snapshotRepository>
     <repository>
         <id>release</id>
-<<<<<<< HEAD
-        <name>devops-app-01-releases</name>
-        <url>http://192.168.100.130:8081/repository/devopsapp-releases</url>
-    	</repository>
-=======
-        <name>devopsapp-releases</name>
-        <url>http://192.168.100.130:8081/repository/devopsapp-releases</url>
+        <name>maven-releases</name>
+        <url>http://192.168.100.130:8081/repository/maven-releases</url>
     </repository>
->>>>>>> 6a48d671665e7235ce6b1da0601f78aca29c1398
 </distributionManagement>
 
 <!--  <distributionManagement>
