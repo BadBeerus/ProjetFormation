@@ -17,7 +17,9 @@ projet: - deployer le projet su un repo nexus sur une machine distante (VM)
 
 
 
+
 ############# Préparation de l'Infrastructure ##############
+
 
 
 
@@ -44,7 +46,9 @@ projet: - deployer le projet su un repo nexus sur une machine distante (VM)
 
 
 
+
 ############# SCRIPT SH POST BUILD ################
+
 
 
 
@@ -61,3 +65,4 @@ projet: - deployer le projet su un repo nexus sur une machine distante (VM)
 	test pour savoir si le dossier "/DATA/projet" existe, sinon on le créer.
 	
 6.	Enfin copie le .jar dans le dossier /DATA/projet
+
